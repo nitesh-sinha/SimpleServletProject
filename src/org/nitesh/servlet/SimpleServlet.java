@@ -17,7 +17,6 @@ import javax.servlet.http.HttpSession;
 @WebServlet(urlPatterns = {"/SimpleServletPath"},
 			initParams={@WebInitParam(name="defaultUserName", value="John Doe")})
 // initParams can be specified in web.xml as well as <init-param></init-param>
-
 public class SimpleServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

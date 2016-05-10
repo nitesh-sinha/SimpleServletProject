@@ -2,11 +2,15 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>SimpleServletProject</display-name>
  <servlet>
- 	<servlet-name>xmlServlet</servlet-name>
- 	<servlet-class>org.nitesh.servlet.XmlServlet</servlet-class>
+ 	<servlet-name>InitJSP</servlet-name>
+ 	<jsp-file>/initpage.jsp</jsp-file>
+ 	<init-param>
+ 		<param-name>defaultUser</param-name>
+ 		<param-value>Default user name</param-value>
+ 	</init-param>
  </servlet>
  <servlet-mapping>
- 	<servlet-name>xmlServlet</servlet-name>
- 	<url-pattern>/xmlServletPath</url-pattern>
+ 	<servlet-name>InitJSP</servlet-name>
+ 	<url-pattern>/initpage.jsp</url-pattern>
  </servlet-mapping>
 </web-app>
